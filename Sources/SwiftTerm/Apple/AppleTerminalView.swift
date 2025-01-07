@@ -5,28 +5,15 @@
 //
 //  Created by Miguel de Icaza on 4/21/20.
 //
-#if os(macOS) || os(iOS) || os(visionOS)
 import Foundation
 import CoreGraphics
 import CoreText
-
-#if os(iOS) || os(visionOS)
-import UIKit
-typealias TTColor = UIColor
-typealias TTFont = UIFont
-typealias TTRect = CGRect
-typealias TTBezierPath = UIBezierPath
-public typealias TTImage = UIImage
-#endif
-
-#if os(macOS)
 import AppKit
 typealias TTColor = NSColor
 typealias TTFont = NSFont
 typealias TTRect = CGRect
 typealias TTBezierPath = NSBezierPath
 public typealias TTImage = NSImage
-#endif
 
 // Holds the information used to render a line
 struct ViewLineInfo {
@@ -1321,4 +1308,3 @@ extension TerminalView {
     }
     
 }
-#endif

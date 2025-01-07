@@ -6,7 +6,6 @@
 //
 
 import Foundation
-#if !os(iOS) && !os(tvOS)
 
 /**
  * APIs to assist in controlling a Unix pseudo-terminal from Swift.
@@ -103,4 +102,3 @@ public class PseudoTerminalHelpers {
         return (status, size)
     }
 }
-#endif

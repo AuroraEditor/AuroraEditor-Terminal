@@ -6,7 +6,6 @@
 //
 //  Created by Miguel de Icaza on 4/17/21.
 //
-#if os(macOS)
 import Foundation
 import XCTest
 
@@ -70,4 +69,3 @@ final class SwiftTermMemory: XCTestCase {
         ("testMemory", testMemory),
     ]
 }
-#endif

@@ -4,8 +4,6 @@
 //
 //  Created by Miguel de Icaza on 3/6/20.
 //
-
-#if os(macOS)
 import Foundation
 import AppKit
 
@@ -185,5 +183,3 @@ open class LocalProcessTerminalView: TerminalView, TerminalViewDelegate, LocalPr
         return winsize(ws_row: UInt16(terminal.rows), ws_col: UInt16(terminal.cols), ws_xpixel: UInt16 (f.width), ws_ypixel: UInt16 (f.height))
     }
 }
-
-#endif

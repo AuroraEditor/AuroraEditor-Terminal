@@ -5,10 +5,7 @@ import PackageDescription
 let package = Package(
     name: "SwiftTerm",
     platforms: [
-        .iOS(.v13),
-        .macOS(.v10_15),
-        .tvOS(.v13),
-        .visionOS(.v1)
+        .macOS(.v10_15)
     ],
     products: [
         .executable(name: "SwiftTermFuzz", targets: ["SwiftTermFuzz"]),
@@ -30,11 +27,6 @@ let package = Package(
             dependencies: ["SwiftTerm"],
             path: "Sources/SwiftTermFuzz"
         ),
-//        .target (
-//            name: "CaptureOutput",
-//            dependencies: ["SwiftTerm"],
-//            path: "Sources/CaptureOutput"
-//        ),        
         .testTarget(
             name: "SwiftTermTests",
             dependencies: ["SwiftTerm"],

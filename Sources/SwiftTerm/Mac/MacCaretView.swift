@@ -7,7 +7,6 @@
 //  Created by Miguel de Icaza on 3/20/20.
 //
 
-#if os(macOS)
 import Foundation
 import AppKit
 import CoreText
@@ -119,4 +118,3 @@ class CaretView: NSView, CALayerDelegate {
         return nil
     }
 }
-#endif

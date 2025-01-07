@@ -4,8 +4,6 @@
 //
 //  Created by Miguel de Icaza on 6/29/21.
 //
-
-#if os(macOS)
 import Foundation
 import AppKit
 
@@ -85,4 +83,3 @@ extension NSAttributedString {
         return attributeKeys.contains(NSAttributedString.Key.selectionBackgroundColor.rawValue)
     }
 }
-#endif

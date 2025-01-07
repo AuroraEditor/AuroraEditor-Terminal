@@ -8,8 +8,6 @@
 //
 //  Created by Miguel de Icaza on 3/4/20.
 //
-
-#if os(macOS)
 import Foundation
 import AppKit
 import CoreText
@@ -1235,4 +1233,3 @@ extension TerminalViewDelegate {
     public func iTermContent (source: TerminalView, content: ArraySlice<UInt8>) {
     }
 }
-#endif

@@ -4,7 +4,6 @@
 //
 //  Created by Miguel de Icaza on 4/13/20.
 //
-#if os(macOS)
 import Foundation
 import XCTest
 
@@ -30,4 +29,3 @@ final class SwiftTermOsc: XCTestCase {
     ]
 
 }
-#endif

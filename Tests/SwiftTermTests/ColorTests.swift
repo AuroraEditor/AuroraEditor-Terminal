@@ -5,7 +5,7 @@
 //  Created by Miguel de Icaza on 4/29/21.
 //
 //
-#if os(macOS)
+
 import XCTest
 import Foundation
 
@@ -46,4 +46,3 @@ final class ColorTests: XCTestCase {
         ("testColors", testExtendedColor)
     ]
 }
-#endif
